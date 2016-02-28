@@ -157,6 +157,8 @@
 
         public void RemoveAt(int index)
         {
+            this.CheckIndex(index);
+
             for (int i = index; i < this.count; i++)
             {
                 this.listElements[i] = this.listElements[i + 1];

@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CustomLinkedListTests.cs" />
+    <Compile Include="CustomLinkedStackTests.cs" />
     <Compile Include="CustomListTests.cs" />
     <Compile Include="CustomQueueTests.cs" />
     <Compile Include="CustomStackTests.cs" />

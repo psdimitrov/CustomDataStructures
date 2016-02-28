@@ -6,19 +6,23 @@
 
     public class CustomStack<T> : IEnumerable<T>
     {
-        private const int DefaultCapacity = 10;
+        private const int DefaultCapacity = 8;
 
-        private T[] stackElements = new T[DefaultCapacity];
+        private T[] stackElements;
 
-        private int capacity = DefaultCapacity;
+        private int capacity;
 
         private int count;
 
-        public CustomStack()
-        {            
+        public CustomStack(int capacity = DefaultCapacity)
+        {
+            this.capacity = capacity;
+            this.stackElements = new T[this.capacity];
+            this.Count = 0;
         }
 
         public CustomStack(IEnumerable<T> collection)
+            : this()
         {
             foreach (var item in collection)
             {
@@ -90,7 +94,20 @@
 
             return element;
         }
-                  
+
+        public bool Contains(T item)
+        {
+            for (int i = 0; i < this.count; i++)
+            {
+                if (this.stackElements.Equals(item))
+                {
+                    return true;
+                }                
+            }
+
+            return false;
+        }
+
         public void Clear()
         {
             Array.Clear(this.stackElements, 0, this.count);

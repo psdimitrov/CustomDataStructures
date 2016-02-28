@@ -56,10 +56,7 @@
 
         public T Dequeue()
         {
-            if (this.Count == 0)
-            {
-                throw new InvalidOperationException("Empty collection");
-            }
+            this.CheckIfEmpty();
 
             T dequeuedElement = this.queueElements[0];
 
@@ -68,7 +65,7 @@
                 this.queueElements[i] = this.queueElements[i + 1];
             }
 
-            this.Count--;
+            this.queueElements[--this.count] = default(T);            
 
             return dequeuedElement;
         }

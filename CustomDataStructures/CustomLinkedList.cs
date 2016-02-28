@@ -129,7 +129,7 @@
             }
             else if (this.tail.Value.Equals(item))
             {
-                this.tail = FindNodeByIndex(this.count - 2);
+                this.tail = this.FindNodeByIndex(this.count - 2);
                 this.tail.NextNode = null;
                 return true;
 

@@ -8,14 +8,14 @@
     using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     [TestClass]
-    public class CustomStackTests
+    public class CustomLinkedStackTests
     {
-        private CustomStack<int> stack;
+        private CustomLinkedStack<int> stack;
 
         [TestInitialize]
         public void TestInitiallize()
         {
-            this.stack = new CustomStack<int>();
+            this.stack = new CustomLinkedStack<int>();
         }
 
         [TestMethod]
@@ -170,7 +170,7 @@
         [TestMethod]
         public void TestCtor_CustomStackCreatedWithCollection_StackCreated()
         {
-            CustomStack<int> customStack = new CustomStack<int>(new[] { 1, 2, 3, 4, 5, 6 });
+            CustomLinkedStack<int> customStack = new CustomLinkedStack<int>(new[] { 1, 2, 3, 4, 5, 6 });
 
             Assert.AreEqual(6, customStack.Count);
         }
@@ -196,7 +196,7 @@
         [TestMethod]
         public void PushPop1000Elements_EmptyStack_ShouldWorkCorrectly()
         {
-            var stringStack = new CustomStack<string>();
+            var stringStack = new CustomLinkedStack<string>();
 
             Assert.AreEqual(0, stringStack.Count);
 
@@ -240,7 +240,8 @@
         [TestMethod]
         public void ToArray_EmptyStack_ShouldReturnEmptyArray()
         {
-            var resultArray = this.stack.ToArray();
+            var dateStack = new CustomLinkedStack<DateTime>();
+            var resultArray = dateStack.ToArray();
 
             CollectionAssert.AreEqual(new DateTime[] { }, resultArray);
         }

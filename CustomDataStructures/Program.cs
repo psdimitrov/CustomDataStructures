@@ -2,6 +2,8 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
+    using System.Runtime.ConstrainedExecution;
 
     public class Program
     {
@@ -80,9 +82,13 @@
 
             Console.WriteLine(myLinkedList.Contains(20));
             
-            Console.WriteLine(myLinkedList.Count);   
+            Console.WriteLine(myLinkedList.Count);
+
+            Console.WriteLine();
+            Stack<int> stack = new Stack<int>();
+
             
-                              
+
         }
     }
 }
