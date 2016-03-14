@@ -5,7 +5,7 @@
     using System.Collections.Generic;
     using System.Text;
 
-    public class CustomList<T> : IList<T>
+    public class CustomArrayList<T> : IList<T>
     {
         private const int DefaultCapacity = 16;
 
@@ -13,19 +13,19 @@
 
         private T[] listElements;
 
-        public CustomList()
+        public CustomArrayList()
         {
             this.listElements = new T[DefaultCapacity];
             this.count = 0;
         }
 
-        public CustomList(int capacity)
+        public CustomArrayList(int capacity)
         {
             this.listElements = new T[capacity];
             this.count = 0;
         }
 
-        public CustomList(IEnumerable<T> collection)
+        public CustomArrayList(IEnumerable<T> collection)
             : this()
         {
             foreach (var item in collection)

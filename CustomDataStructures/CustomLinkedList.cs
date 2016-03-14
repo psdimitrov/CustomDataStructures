@@ -131,10 +131,11 @@
             {
                 this.tail = this.FindNodeByIndex(this.count - 2);
                 this.tail.NextNode = null;
-                return true;
 
+                return true;
             }
-            else {
+            else
+            {
                 var currentNode = this.head.NextNode;
                 Node previousNode = this.head;
                 while (currentNode != null)

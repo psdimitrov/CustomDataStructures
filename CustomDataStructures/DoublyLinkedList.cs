@@ -6,11 +6,9 @@
 
     public class DoublyLinkedList<T> : IEnumerable<T>
     {
-        private ListNode<T> head;
+        private ListNode head;
 
-        private ListNode<T> tail;
-
-        public int Count { get; private set; }
+        private ListNode tail;
 
         public DoublyLinkedList()
         {
@@ -19,15 +17,17 @@
             this.Count = 0;
         }
 
+        public int Count { get; private set; }
+
         public void AddFirst(T element)
         {
             if (this.Count == 0)
             {
-                this.head = this.tail = new ListNode<T>(element);
+                this.head = this.tail = new ListNode(element);
             }
             else
             {
-                var newHead = new ListNode<T>(element);
+                var newHead = new ListNode(element);
                 newHead.NextNode = this.head;
                 this.head.PrevNode = newHead;
                 this.head = newHead;
@@ -38,13 +38,13 @@
 
         public void AddLast(T element)
         {
-            if (Count == 0)
+            if (this.Count == 0)
             {
-                this.head = this.tail = new ListNode<T>(element);
+                this.head = this.tail = new ListNode(element);
             }
             else
             {
-                var newTail = new ListNode<T>(element);
+                var newTail = new ListNode(element);
                 newTail.PrevNode = this.tail;
                 this.tail.NextNode = newTail;
                 this.tail = newTail;
@@ -140,7 +140,7 @@
             return array;
         }
 
-        private class ListNode<T>
+        private class ListNode
         {
             public ListNode(T value)
             {
@@ -149,9 +149,9 @@
 
             public T Value { get; set; }
 
-            public ListNode<T> PrevNode { get; set; }
+            public ListNode PrevNode { get; set; }
 
-            public ListNode<T> NextNode { get; set; }
+            public ListNode NextNode { get; set; }
         }
     }
 }

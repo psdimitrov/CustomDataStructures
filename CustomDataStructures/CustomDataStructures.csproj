@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomHashMap.cs" />
     <Compile Include="CustomLinkedList.cs" />
     <Compile Include="CustomLinkedStack.cs" />
-    <Compile Include="CustomList.cs" />
+    <Compile Include="CustomArrayList.cs" />
     <Compile Include="CustomQueue.cs" />
     <Compile Include="CustomStack.cs" />
     <Compile Include="DoublyLinkedList.cs" />
+    <Compile Include="KeyValue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

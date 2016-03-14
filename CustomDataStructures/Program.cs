@@ -50,7 +50,7 @@
                
             // Console.WriteLine(customStack.Peek());
                
-            // CustomList<int> lis = new CustomList<int>();
+            // CustomArrayList<int> lis = new CustomArrayList<int>();
                
             // lis.Add(1);
             // lis.Add(2);
@@ -85,10 +85,7 @@
             Console.WriteLine(myLinkedList.Count);
 
             Console.WriteLine();
-            Stack<int> stack = new Stack<int>();
-
-            
-
+            Stack<int> stack = new Stack<int>();            
         }
     }
 }

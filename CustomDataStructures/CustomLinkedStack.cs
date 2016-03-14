@@ -6,7 +6,7 @@
 
     public class CustomLinkedStack<T> : IEnumerable<T>
     {
-        private Node<T> firstNode;
+        private Node firstNode;
 
         public CustomLinkedStack()
         {            
@@ -40,7 +40,7 @@
 
         public void Push(T element)
         {
-            this.firstNode = new Node<T>(element, this.firstNode);
+            this.firstNode = new Node(element, this.firstNode);
             this.Count++;
         }
 
@@ -110,15 +110,15 @@
             }
         }
 
-        private class Node<T>
+        private class Node
         {
-            public Node(T value, Node<T> nextNode = null)
+            public Node(T value, Node nextNode = null)
             {
                 this.Value = value;
                 this.NextNode = nextNode;
             }
 
-            public Node<T> NextNode { get; private set; }
+            public Node NextNode { get; private set; }
 
             public T Value { get; private set; }
         }
