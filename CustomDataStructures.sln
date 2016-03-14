@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDataStructures", "CustomDataStructures\CustomDataStructures.csproj", "{D0ACB6E9-DE35-4D7F-A6A7-D5AABEAB47DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDataStructuresTests", "CustomDataStructuresTests\CustomDataStructuresTests.csproj", "{CA0AC697-4C24-46AA-8EA5-3412601FAA8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomDataStructures.Tests", "CustomDataStructuresTests\CustomDataStructures.Tests.csproj", "{CA0AC697-4C24-46AA-8EA5-3412601FAA8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
