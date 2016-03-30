@@ -52,9 +52,11 @@
   </Choose>
   <ItemGroup>
     <Compile Include="CustomHashMapTests.cs" />
+    <Compile Include="CustomLinkedHashMapTests.cs" />
     <Compile Include="CustomLinkedListTests.cs" />
     <Compile Include="CustomLinkedStackTests.cs" />
     <Compile Include="CustomArrayListTests.cs" />
+    <Compile Include="CustomOrderedSetTests.cs" />
     <Compile Include="CustomQueueTests.cs" />
     <Compile Include="CustomStackTests.cs" />
     <Compile Include="DoublyLinkedListTests.cs" />

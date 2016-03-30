@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BinarySeatchTree.cs" />
     <Compile Include="CustomHashMap.cs" />
+    <Compile Include="CustomLinkedHashMap.cs" />
     <Compile Include="CustomLinkedList.cs" />
     <Compile Include="CustomLinkedStack.cs" />
     <Compile Include="CustomArrayList.cs" />
+    <Compile Include="CustomOrderedSet.cs" />
     <Compile Include="CustomQueue.cs" />
     <Compile Include="CustomStack.cs" />
     <Compile Include="DoublyLinkedList.cs" />
